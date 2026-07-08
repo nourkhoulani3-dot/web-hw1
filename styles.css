@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #fff5fa, #ffe4f1);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #ff82bd, #ffc3df);
+    padding: 25px 7% 60px;
+}
+
+nav {
+    background: white;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #e75480;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #e75480;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff1493;
+}
+
+.hero {
+    background: white;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 8px 20px rgba(231,84,128,.15);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.intro {
+    color: #e75480;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    color: #e75480;
+    font-size: 48px;
+}
+
+.hero h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #e75480;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background: #ff1493;
+}
+
+.hero-image img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 8px 20px rgba(231,84,128,.3);
+}
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+.card,
+.pink-section {
+    background: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(231,84,128,.12);
+}
+
+h2 {
+    color: #e75480;
+    margin-bottom: 20px;
+}
+
+.grid,
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.mini-card,
+.interest-grid div {
+    background: #fff5fa;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.jobs li {
+    background: #fff5fa;
+    margin: 15px 0;
+    padding: 15px;
+    border-left: 5px solid #e75480;
+    border-radius: 10px;
+}
+
+a {
+    color: #e75480;
+}
+
+footer {
+    background: #e75480;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+    nav,
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid,
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+}
